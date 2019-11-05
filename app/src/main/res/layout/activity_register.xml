@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:fillViewport="true"
+    android:id="@+id/sv_register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/arrowImageViewMain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:tint="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/registerTextview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="회원가입"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/arrowImageViewMain2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/arrowImageViewMain2" />
+
+
+            <TextView
+                android:id="@+id/registerTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="60dp"
+                android:text="아이디/비밀번호 설정"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerTextview2" />
+
+
+            <TextView
+                android:id="@+id/nicknameTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="24dp"
+                android:text="닉네임"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerTextview" />
+
+            <EditText
+                android:id="@+id/nicknameEditText"
+                android:layout_width="324dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/phone_verification_edittext"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nicknameTextview" />
+
+            <TextView
+                android:id="@+id/emailTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="20dp"
+                android:text="이메일 아이디"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nicknameEditText" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="324dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/phone_verification_edittext"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailTextview" />
+
+            <TextView
+                android:id="@+id/passwordTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="비밀번호"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="324dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/phone_verification_edittext"
+                android:ems="10"
+                android:hint="10자 이상 영어,숫자,특수문자 중 2개 조합"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordTextview" />
+
+            <TextView
+                android:id="@+id/nicknameCheckTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="한글, 영문, 숫자만 가능합니다."
+                android:textColor="#DD5353"
+                android:textSize="11dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/nicknameTextview"
+                app:layout_constraintEnd_toEndOf="@+id/nicknameEditText" />
+
+            <TextView
+                android:id="@+id/emailCheckTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이메일 형식으로 입력해주세요"
+                android:textColor="#DD5353"
+                android:textSize="11sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/emailTextview"
+                app:layout_constraintEnd_toEndOf="@+id/emailEditText" />
+
+            <TextView
+                android:id="@+id/passwordCheckTextVIew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10자 이상 영어, 숫자, 특수문자 중 2개 조합"
+                android:textColor="#DD5353"
+                android:textSize="11sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/passwordTextview"
+                app:layout_constraintEnd_toEndOf="@+id/passwordEditText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/finishregisterButton"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:text="회원가입 완료"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">가다가</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string name="kakao_app_key">25d2cf6246b8763cb49df22f21edbf37</string>
+</resources>
