@@ -106,16 +106,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_ios_black_48" />
 
+
     <Button
         android:id="@+id/logoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
-        android:text="로그아웃"
+        android:layout_marginTop="40dp"
+        android:text="테스트"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
 
     <com.kakao.usermgmt.LoginButton
         android:id="@+id/com_kakao_login"

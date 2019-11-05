@@ -11,10 +11,13 @@ import com.kakao.util.exception.KakaoException
 
 
 class SessionCallback : ISessionCallback {
+
+    //로그인 실패
     override fun onSessionOpenFailed(exception: KakaoException?) {
         Log.e("SessionCallback::","onSessionOpenFailed:"+exception?.message)
     }
 
+    //로그인 성공
     override fun onSessionOpened() {
         requestMe()
     }

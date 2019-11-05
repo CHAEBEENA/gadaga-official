@@ -79,6 +79,11 @@ class LoginActivity :AppCompatActivity (){
             Log.e("HashKey",getHashKey(this))
         }
 
+        //카카오 제공 버튼
+            Session.getCurrentSession().addCallback(callback)
+
+
+
 
 
 
