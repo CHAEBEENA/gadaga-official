@@ -87,8 +87,16 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.13'
 
-    //소셜로그인
+    //카카오 소셜로그인
     implementation 'com.kakao.sdk:usermgmt:1.5.1'
+
+    //네이버 소셜로그인
+    implementation 'com.naver.nid:naveridlogin-android-sdk:4.2.5'
+
+
+
+
+
 
 
     /*//소셜로그인

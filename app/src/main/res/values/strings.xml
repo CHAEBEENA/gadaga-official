@@ -5,4 +5,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     
     <string name="kakao_app_key">25d2cf6246b8763cb49df22f21edbf37</string>
+    <string name="nhn_oauth_client_id">2BxjbTjGqEaXvjTRkWNh</string>
+    <string name="nhn_oauth_client_secret">YMWjYNyT8i</string>
+    <string name="nhn_oauth_client_name">Gadaga</string>
 </resources>
